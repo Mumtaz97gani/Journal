@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>journal clone</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper-header">
+      <header>
+        <div class="navbar" style="background-color: #f7f7f7">
+          <div class="nav-logo">
+            <div class="logo">
+              <a href="#"><img src="./j-logo.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="nav-search">
+            <select class="select-search">
+              <option value="">All</option>
+            </select>
+            <input
+              type="search"
+              class="input-search"
+              placeholder="search here..."
+            />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="nav-menues">
+            <div class="menu">
+              <div class="menu-item">
+                <i class="fas fa-user"></i>
+                <span>Login</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-pencil-alt"></i>
+                <span>Register</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-heart"></i>
+                <span>Wishlist</span>
+              </div>
+              <div class="menu-item">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Compare</span>
+              </div>
+            </div>
+            <div class="nav-cart">
+              <span>0 item(s) - $0.00</span>
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-left">
+            <a href="#" class="all-dept"
+              ><i class="fa-solid fa-bars"></i>
+              All Departments
+            </a>
+
+            <a class="dept" href="#"><span>MULTILEVEL</span></a>
+            <a class="dept" href="#"><span>MEGAMENU</span></a>
+            <a class="dept" href="#"><span>FULLWIDTH</span></a>
+          </div>
+
+          <div class="panel-right">
+            <a href="#"
+              ><i class="fa-solid fa-phone"></i><span>1800XXXXXXXX</span></a
+            >
+            <a href="#"><i class="fa-solid fa-message"></i><span>Blog</span></a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="mini-header">
+      <div class="mini-header-1">
+        <div class="mini-headeritems">
+          <ul class="mini-list"></ul>
+        </div>
+      </div>
+      <div class="mini-header-2">
+        <div class="headeritems">
+          <ul class="mini-list"></ul>
+        </div>
+      </div>
+      <div class="mini-header-3">
+        <div class="headeritems">
+          <ul class="mini-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="mobile-container">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        style="width: 70%"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner" style="border-radius: 1rem">
+          <div class="carousel-item active" style="height: 62vh">
+            <div class="mobile">
+              <img
+                src="./home-section/left1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div
+              class="carousel-caption d-md-block"
+              style="text-align: left; padding-bottom: 5rem"
+            >
+              <p style="font-size: 3rem; color: black">
+                <b
+                  >Best mobile options <br />
+                  at any resolution</b
+                >
+              </p>
+              <button class="carousal-btn">
+                LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="height: 62vh">
+            <div class="mobile">
+              <img
+                src="./home-section/left2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div
+              class="carousel-caption d-md-block"
+              style="text-align: left; padding-bottom: 5rem"
+            >
+              <p style="font-size: 3rem; color: black">
+                <b
+                  >Best mobile options <br />
+                  at any resolution</b
+                >
+              </p>
+              <button class="carousal-btn">
+                LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="height: 62vh">
+            <div class="mobile">
+              <img src="./home-section/left3.png" alt="..." />
+            </div>
+            <div
+              class="carousel-caption d-md-block"
+              style="text-align: left; padding-bottom: 5rem"
+            >
+              <p style="font-size: 3rem; color: black">
+                <b
+                  >Best mobile options <br />
+                  at any resolution</b
+                >
+              </p>
+              <button class="carousal-btn">
+                LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="watch-pc">
+        <div
+          class="watch"
+          style="
+            background-image: url('./home-section/right1.png');
+            background-color: rgba(240, 242, 245, 1);
+          "
+        >
+          <div class="phone" style="padding-top: 1.5rem">
+            <span>
+              <h6 style="color: rgba(13, 82, 214, 1)">WEARABLE</h6>
+              <h5 style="width: 6rem">Intelligent & Durable Design</h5>
+            </span>
+          </div>
+        </div>
+        <div
+          class="watch"
+          style="
+            background-image: url('./home-section/right2.png');
+            background-color: rgba(240, 242, 245, 1);
+          "
+        >
+          <div class="phone">
+            <span>
+              <h6 style="color: rgba(13, 82, 214, 1)">COMPUTERS</h6>
+              <h5 style="width: 6rem">Build your own high powered PC</h5>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- info section -->
+    <div class="info-bar">
+      <div class="info-item">
+        <i class="icon">🚚</i>
+        <p>Free Shipping</p>
+        <small>Free delivery over $100</small>
+      </div>
+      <div class="info-item">
+        <i class="icon">↩️</i>
+        <p>Free Returns</p>
+        <small>Hassle-free returns</small>
+      </div>
+      <div class="info-item">
+        <i class="icon">🔒</i>
+        <p>Secure Shopping</p>
+        <small>Best security features</small>
+      </div>
+      <div class="info-item">
+        <i class="icon">📦</i>
+        <p>Unlimited Blocks</p>
+        <small>Any content, any page</small>
+      </div>
+    </div>
+
+    <!-- why section -->
+    <div class="why-section">
+      <h2>Why buy from us?</h2>
+      <p>
+        Journal has been the best selling and most loved OpenCart theme since
+        its first launch in 2013. Tried and tested by over 20K people, Journal
+        is the best OpenCart theme framework on the market today.
+      </p>
+      <a href="#">Learn more</a>
+    </div>
+
+    <div class="categories-section">
+      <div class="tabs">
+        <button class="tab active">Top Categories</button>
+        <button class="tab">Electronics</button>
+        <button class="tab">Beauty</button>
+        <button class="tab">Fashion</button>
+      </div>
+      <div class="category-items">
+        <div class="category-item">
+          <img src="./feature category/1-demo09-240x280h.jpg" />
+          <p>FASHION</p>
+        </div>
+        <div class="category-item">
+          <img src="./feature category/2-bagcat-240x280h.jpg" />
+          <p>BAGS</p>
+        </div>
+        <div class="category-item">
+          <img src="./feature category/3-beauty-240x280h.jpg" />
+          <p>HEALTH & BEAUTY</p>
+        </div>
+        <div class="category-item">
+          <img src="./feature category/4-f6-240x280h.jpg" />
+          <p>FOOTWEAR</p>
+        </div>
+        <div class="category-item">
+          <img src="./feature category/5-acceso-240x280h.jpg" />
+          <p>HOME DECOR</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery module -->
+    <div class="gallery">
+      <div class="gallery-head">
+        <h2>Improved Gallery Module</h2>
+        <p>
+          The Gallery module supports images, videos and can also act as banners
+          that can point to any other page or open other Popup modules. Create
+          different modules with images, videos, banners or a combination of
+          all. Add your modules on any page in any grid format.
+        </p>
+      </div>
+      <div class="gallery-items">
+        <div class="gallery-item">
+          <img src="./improved gallery/233H-2000x1333.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="./improved gallery/backdrop006b-2000x1333.jpg.jfif"
+            alt=""
+          />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/backdrop008-1606x1072.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/backdrop021-2000x1333.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/backdrop023-1607x1072.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/backdrop031-1500x1000.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/backdrop036-2000x1420.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/beauty-1000x1503.jpg.jfif" alt="" />
+        </div>
+        <div class="gallery-item">
+          <img src="./improved gallery/demo19-1500x1001.jpg.jfif" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- shop by brand -->
+
+    <div class="Shop-section">
+      <h2>Shop by Brand</h2>
+      <div class="shop-section-items">
+        <div class="shop-section item">
+          <img src="./Shopby/apple_logo-150x150h.jpg.jfif" alt="" />
+        </div>
+        <div class="shop-section item">
+          <img src="./Shopby/awesome-150x150.jpg.jfif" alt="" />
+        </div>
+        <div class="shop-section item">
+          <img src="./Shopby/canon_logo-150x150w.jpg.jfif" alt="" />
+        </div>
+        <div class="shop-section item">
+          <img src="./Shopby/chic-150x150.jpg.jfif" alt="" />
+        </div>
+        <div class="shop-section item">
+          <img src="./Shopby/erikson-150x150.jpg.jfif" alt="" />
+        </div>
+        <div class="shop-section item">
+          <img src="./Shopby/fashion-150x150.jpg.jfif" alt="" />
+        </div>
+        <div class="shop-section item">
+          <img src="./Shopby/FC-fashion-150x150.jpg.jfif" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Review Section -->
+    <div class="review-section">
+      <div class="review-head">
+        <h2>What are people saying about us</h2>
+      </div>
+      <div class="review-cards">
+        <div class="card text-center" style="width: 45rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left" style="color: #f24e07"></i>
+            <p class="card-text">
+              I have pu I have purchased hundred of hundreds file I have
+              purchased hundred of hundreds file I have purchased hundred of
+              hundreds filerchased hundred of hundreds file I have purchased
+              hundred of hundreds file I have purchased hundred of hundreds file
+              I have purchased hundred of hundreds file
+            </p>
+            <h3>-Charlibaltimore</h3>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 45rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left" style="color: #f24e07"></i>
+            <p class="card-text">
+              I have pu I have purchased hundred of hundreds file I have
+              purchased hundred of hundreds file I have purchased hundred of
+              hundreds filerchased hundred of hundreds file I have purchased
+              hundred of hundreds file I have purchased hundred of hundreds file
+              I have purchased hundred of hundreds file
+            </p>
+            <h3>-Chromebandit</h3>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 45rem">
+          <div class="card-body">
+            <i class="fa-solid fa-quote-left" style="color: #f24e07"></i>
+            <p class="card-text">
+              I have pu I have purchased hundred of hundreds file I have
+              purchased hundred of hundreds file I have purchased hundred of
+              hundreds filerchased hundred of hundreds file I have purchased
+              hundred of hundreds file I have purchased hundred of hundreds file
+              I have purchased hundred of hundreds file
+            </p>
+            <h3>-Kellyhorne</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="content">
+          <h1>About Us</h1>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Custom Links</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h1>Customer</h1>
+
+          <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">Site Map</a></li>
+            <li><a href="">Brands</a></li>
+            <li><a href="">Custom Links</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h1>My Account</h1>
+
+          <ul>
+            <li><a href="">My Account</a></li>
+            <li><a href="">Order History</a></li>
+            <li><a href="">Affiliates</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">Gift Certificates</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h1>Newsletter</h1>
+          <br />
+          <p>
+            Stay up to date with news and<br />
+            promotions by signing up for our newsletter
+          </p>
+          <br />
+
+          <input type="text" placeholder="Your Email.." /><button
+            class="btn-foot"
+          >
+            <i class="fa-regular fa-envelope"></i> Send</button
+          ><br /><br />
+          <input type="checkbox" name="" id="" /> I have read and agree to the
+          <a href="" style="font-size: 1.2rem">Privacy Policy.</a>
+        </div>
+      </div>
+      <div class="foot-last">
+        <div>
+          <p>Copyright © 2014, Your Store, All Rights Reserved</p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(".shop-section-items").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+</html>
